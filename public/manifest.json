@@ -1,0 +1,21 @@
+{
+  "name": "Vinyl Scanner MVP",
+  "short_name": "Vinyls",
+  "description": "Scan vinyl barcodes, categorize them, and share your collection.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/vinyl/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/vinyl/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

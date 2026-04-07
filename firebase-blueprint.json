@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A user of the application",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "photoURL": { "type": "string" }
+      },
+      "required": ["uid", "displayName", "email"]
+    },
+    "Record": {
+      "title": "Record",
+      "description": "A scanned vinyl record",
+      "type": "object",
+      "properties": {
+        "ownerId": { "type": "string" },
+        "barcode": { "type": "string" },
+        "title": { "type": "string" },
+        "artist": { "type": "string" },
+        "category": { "type": "string" },
+        "spotifyUrl": { "type": "string" },
+        "coverUrl": { "type": "string" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["ownerId", "title", "artist", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User profiles"
+    },
+    "/records/{recordId}": {
+      "schema": { "$ref": "#/entities/Record" },
+      "description": "Scanned vinyl records"
+    }
+  }
+}

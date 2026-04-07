@@ -1,0 +1,5 @@
+{
+  "name": "Vinyl Scanner MVP",
+  "description": "Scan vinyl barcodes, categorize them, and share your collection.",
+  "requestFramePermissions": ["camera"]
+}
