@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plane, Search, Share, Activity, AlertCircle, RefreshCw, CloudSun, Sun, Cloud, CloudRain, CloudDrizzle, CloudSnow, CloudLightning, Car, Coffee, Briefcase, Map, ExternalLink, Smartphone } from 'lucide-react';
+import { Plane, Search, Share, Activity, AlertCircle, RefreshCw, CloudSun, Sun, Cloud, CloudRain, CloudDrizzle, CloudSnow, CloudLightning, Coffee, Briefcase, Map, ExternalLink, Smartphone } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { FlightStatus } from './types';
@@ -272,24 +272,6 @@ export default function App() {
               <div className="mt-2">
                 <p className="text-3xl font-bold text-white">{weather ? `${weather.temp}°F` : '–°F'}</p>
                 <p className="text-sm text-[#8E9192] mt-1">{weather ? `${weather.city} • ${weather.description}` : flightData.destination}</p>
-              </div>
-            </div>
-
-            {/* Ground Transport Card */}
-            <div className="bg-[#1B1F22] rounded-[2rem] p-6 flex flex-col sm:flex-row gap-6 border border-white/5 shadow-[0_4px_24px_rgba(0,0,0,0.2)] md:col-span-2 md:row-span-1 min-h-[140px]">
-              <div className="flex-1 flex flex-col justify-between">
-                <div>
-                  <p className="font-bold text-[10px] sm:text-xs text-[#8E9192] uppercase tracking-widest">Ground Transport</p>
-                  <h3 className="text-lg font-bold mt-2 text-white flex items-center gap-2">UBER / LYFT</h3>
-                </div>
-                <p className="text-xs text-[#8E9192] mt-2 leading-relaxed">Wait time: 4-6 mins<br/>Pick up: Level 2, Island 3</p>
-              </div>
-              <div className="flex-1 bg-[#2D3135] rounded-[1.5rem] p-4 flex flex-col justify-between">
-                <div>
-                  <p className="text-[10px] uppercase font-bold text-[#8E9192] tracking-widest">Public Transit</p>
-                  <p className="text-sm font-bold text-white mt-1">FlyAway Bus</p>
-                </div>
-                <p className="text-xs text-[#8E9192] mt-2">Next: {new Date(Date.now() + 15*60000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
               </div>
             </div>
 
