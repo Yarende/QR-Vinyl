@@ -1,5 +1,6 @@
 {
-  "name": "Vinyl Scanner MVP",
-  "description": "Scan vinyl barcodes, categorize them, and share your collection.",
-  "requestFramePermissions": ["camera"]
+  "name": "byAir MVP",
+  "description": "A flight tracker app focused on real-time flight awareness and airport guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
